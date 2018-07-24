@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChatFragment">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="10dp"
+        android:paddingBottom="50dp"
+        android:clipToPadding="false" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true">
+
+            <EditText
+                android:id="@+id/chat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="50dp"
+                android:background="@drawable/square_edittext"
+                android:hint="Ketikan Pesan"
+                android:layout_marginLeft="10dp"
+                android:textSize="13sp"/>
+
+            <Button
+                android:id="@+id/btnSend"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/ic_send"
+                android:layout_marginTop="13dp"
+                android:layout_marginRight="10dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray"/>
+
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>
